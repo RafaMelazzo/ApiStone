@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ApiStone.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApiStone.Servicos
 {
@@ -8,10 +9,6 @@ namespace ApiStone.Servicos
 
         public DbContexto() { }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            string conexao = "Server=localhost;Port=3306;Database=myDataBase;Uid=gama;Pwd=academy;";
-
-        }
+        public DbSet<Cliente> Clientes { get; set; }
     }
 }

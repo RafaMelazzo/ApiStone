@@ -5,7 +5,7 @@ namespace ApiStone.Servicos
 {
     public class ClienteSingleton
     {
-        private ClienteSingleton() { }
+        private ClienteSingleton(){}
         private static ClienteSingleton clienteSingleton;
 
         private List<Cliente> clientes = new List<Cliente>();
